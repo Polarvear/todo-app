@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './TodoList.scss';
 import TodoListItem from './TodoListItem';
 
@@ -9,12 +9,12 @@ const TodoList = ({ todos, onRemove, onToggle }) => {
         <TodoListItem
           todo={todo}
           key={todo.id}
-          onRemove={onRemove}
           onToggle={onToggle}
+          onRemove={onRemove}
         />
       ))}
     </div>
   );
 };
 
-export default TodoList;
+export default React.memo(TodoList);
