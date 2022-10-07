@@ -1,13 +1,13 @@
 .TodoListItem {
-    padding: 1rem;
+    width: 31rem;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     &:nth-child(even) {
         background: #f8f9fa;
     }
-    .checkbox {
+    .checkBox {
         cursor: pointer;
-        flex: 1;
         display: flex;
         align-items: center;
         svg {
@@ -15,6 +15,7 @@
         }
         .text {
             margin-left: 0.5rem;
+            float: left;
         }
         &.checked {
             svg {
@@ -28,6 +29,7 @@
     }
     .remove {
         display: flex;
+        margin-left: 24rem;
         align-items: center;
         font-size: 1.5rem;
         color: #ff8787;
